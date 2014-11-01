@@ -1,0 +1,17 @@
+<head>
+  <title>remove-test</title>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  {{#each foobar}}
+    {{> button}}
+  {{/each}}
+</template>
+
+<template name="button">
+  <button>Click Me</button>
+</template>
